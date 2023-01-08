@@ -1,0 +1,151 @@
+DDR Version 1.24 20191016
+In
+Channel 0: DDR3, 800MHz
+Bus Width=32 Col=10 Bank=8 Row=15/15 CS=2 Die Bus-Width=16 Size=2048MB
+Channel 1: DDR3, 800MHz
+Bus Width=32 Col=10 Bank=8 Row=15/15 CS=2 Die Bus-Width=16 Size=2048MB
+256B stride
+ch 0 ddrconfig = 0x101, ddrsize = 0x2020
+ch 1 ddrconfig = 0x101, ddrsize = 0x2020
+pmugrf_os_reg[2] = 0x3AA17AA1, stride = 0xD
+OUT
+Boot1 Release Time: May 29 2020 17:36:36, version: 1.26
+CPUId = 0x0
+ChipType = 0x10, 337
+SdmmcInit=2 0
+BootCapSize=100000
+UserCapSize=14910MB
+FwPartOffset=2000 , 100000
+mmc0:cmd5,20
+SdmmcInit=0 0
+BootCapSize=0
+UserCapSize=14910MB
+FwPartOffset=2000 , 0
+StorageInit ok = 137446
+SecureMode = 0
+SecureInit read PBA: 0x4
+SecureInit read PBA: 0x404
+SecureInit read PBA: 0x804
+SecureInit read PBA: 0xc04
+SecureInit read PBA: 0x1004
+SecureInit read PBA: 0x1404
+SecureInit read PBA: 0x1804
+SecureInit read PBA: 0x1c04
+SecureInit ret = 0, SecureMode = 0
+atags_set_bootdev: ret:(0)
+GPT 0x3335db8 signature is wrong
+recovery gpt...
+GPT 0x3335db8 signature is wrong
+recovery gpt fail!
+Trust Addr:0x4000, 0x0
+Trust Addr:0x4400, 0x0
+Trust Addr:0x4800, 0x0
+Trust Addr:0x4c00, 0x0
+Trust Addr:0x5000, 0x0
+Trust Addr:0x5400, 0x0
+Trust Addr:0x5800, 0x0
+Trust Addr:0x5c00, 0x0
+Addr:0x4000 No find trust.img!
+LoadTrustBL error:-3
+SecureMode = 0
+SecureInit read PBA: 0x4
+SecureInit read PBA: 0x404
+SecureInit read PBA: 0x804
+SecureInit read PBA: 0xc04
+SecureInit read PBA: 0x1004
+SecureInit read PBA: 0x1404
+SecureInit read PBA: 0x1804
+SecureInit read PBA: 0x1c04
+SecureInit ret = 0, SecureMode = 0
+atags_set_bootdev: ret:(0)
+GPT 0x3335db8 signature is wrong
+recovery gpt...
+GPT 0x3335db8 signature is wrong
+recovery gpt fail!
+Trust Addr:0x4000, 0x58334c42
+No find bl30.bin
+Load uboot, ReadLba = 2000
+Load OK, addr=0x200000, size=0x8741c
+RunBL31 0x40000 @ 185146 us
+NOTICE:  BL31: v1.3(release):af49f67
+NOTICE:  BL31: Built : 16:55:08, May 19 2020
+NOTICE:  BL31: Rockchip release version: v1.1
+INFO:    GICv3 with legacy support detected. ARM GICV3 driver initialized in EL3
+INFO:    Using opteed sec cpu_context!
+INFO:    boot cpu mask: 0
+INFO:    plat_rockchip_pmu_init(1191): pd status 3e
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: Initializing BL32
+INF [0x0] TEE-CORE:init_primary_helper:337: Initializing (1.1.0-256-gebb61ff5 #4 Wed Apr 22 0                 1:34:02 UTC 2020 aarch64)
+
+INF [0x0] TEE-CORE:init_primary_helper:338: Release version: 1.2
+
+INF [0x0] TEE-CORE:init_teecore:83: teecore inits done
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0x200000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2014.10-RK3399-06 (Dec 14 2021 - 15:40:19)
+
+CPU: rk3399
+cpu version = 0
+CPU's clock information:
+    aplll = 816000000HZ
+    apllb = 24000000HZ
+    gpll = 800000000HZ
+               aclk_periph_h = 133333333HZ, hclk_periph_h = 66666666HZ, pclk_periph_h = 33333                 333HZ
+               aclk_periph_l0 = 266666666HZ, hclk_periph_l0 = 88888888HZ, pclk_periph_l0 = 44                 444444HZ
+               hclk_periph_l1 = 100000000HZ, pclk_periph_l1 = 50000000HZ
+    cpll = 800000000HZ
+    dpll = 800000000HZ
+    vpll = 24000000HZ
+    npll = 24000000HZ
+    ppll = 676000000HZ
+Board:  Rockchip platform Board
+Uboot as second level loader
+DRAM:  Found dram banks: 1
+Adding bank:0000000000200000(00000000ffe00000)
+Reserve memory for trust os.
+dram reserve bank: base = 0x08400000, size = 0x01e00000
+128 MiB
+SdmmcInit = 0 0
+SDCard Update.
+storage init OK!
+Using default environment
+
+GetParam
+W: Invalid Parameter's tag (0xFFFFFFFF)!
+Invalid parameter
+No pmic detect.
+CPU's clock information:
+    aplll = 816000000HZ
+    apllb = 24000000HZ
+    gpll = 800000000HZ
+               aclk_periph_h = 133333333HZ, hclk_periph_h = 66666666HZ, pclk_periph_h = 33333                 333HZ
+               aclk_periph_l0 = 266666666HZ, hclk_periph_l0 = 88888888HZ, pclk_periph_l0 = 44                 444444HZ
+               hclk_periph_l1 = 100000000HZ, pclk_periph_l1 = 50000000HZ
+    cpll = 800000000HZ
+    dpll = 800000000HZ
+    vpll = 24000000HZ
+    npll = 24000000HZ
+    ppll = 676000000HZ
+misc partition not found!
+SecureBootEn = 0, SecureBootLock = 0
+
+#Boot ver: 0000-00-00#0.00
+empty serial no.
+Writing env to storage...
+done
+normal boot.
+no fuel gauge found
+no fuel gauge found
+read logo on state from dts [0]
+no fuel gauge found
+'recovery' does not seem to be a partition nor an address
+Unable to boot:recovery
+try to start backup
+'backup' does not seem to be a partition nor an address
+Unable to boot:backup
+try to start rockusb
+
